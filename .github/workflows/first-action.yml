@@ -10,6 +10,7 @@ jobs:
         run: echo "Done - Bye"
   second-job:
     runs-on: windows-latest
+    needs: first-job
     steps:
       - name: Print Name
         run: echo "Pratyaksh Kumar"
